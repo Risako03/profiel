@@ -1,17 +1,63 @@
-body {
-  color: orange;
-  background-color: blanchedalmond;
+body{
+  color: rgb(73, 73, 73);
+  background-image: url("images/backgroundimg.jpg");
+  background-size: cover;
+  background-color:rgba(255,255,255,0.3);
+  background-blend-mode:lighten;
+  background-repeat: no-repeat;
+  font-family: "Rubik", "Helvetica", "sans-serif";
+  align-content: center;
+  margin-top: 50px;
 }
 
 h1{
-  font-family: 'Rowdies', cursive;
+  padding: auto;
 }
 
-p{
+p {
   font-size: 20px;
+  margin-top: -20px;
 }
-a{
-  font-family: 'Rowdies', cursive;
+
+#introduction{
+height: 200px;
+}
+
+#about p {
+  font-size: 18px;
+}
+
+#about h2 {
+  margin-bottom: 40px;
+}
+
+.card-white {
+  background-color: #e7e7e7c9;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+
+.btn-orange {
+  color: #ffffff;
+  border: 1px solid #4A4A4A;
+  background-color: orangered;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: whitesmoke;
+  color: #4A4A4A;
+}
+
+a {
   color: orangered;
   text-decoration: none;
 }
@@ -22,30 +68,19 @@ a:hover {
 }
 
 .container {
-  width: 500px;   /* This sets the width */
+  width: 800px; /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
 }
 
-.card-white{
-  background-color: lightyellow;
-  padding: 40px;
-  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
-  border-radius: 4px;
-  margin: 20px 0px;
-  text-align: center;
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
-.btn-orange {
-  background-color: orange;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 4px;
-}
 
-.btn-orange:hover {
-  background-color: orangered;
-  color: white;
-}
+
 
 .list-inline {
   list-style: none;
@@ -58,10 +93,11 @@ a:hover {
 }
 .list-inline i {
   font-size: 50px;
-  color: rgb(230, 230, 230);
+  color: orangered;
+  opacity: 0.6;
 }
 .list-inline i:hover {
-  color: orangered;
+  color: whitesmoke;
 }
 
 @media (max-width: 960px) {
